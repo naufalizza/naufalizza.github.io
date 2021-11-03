@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{
+    /* background: coral; */
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template-areas: ". screen ."
+                         "a screen b"
+                         ". screen .";
+    grid-template-columns: 100px px minmax(480px, 1fr) 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-container > .pre{
+    grid-area: a;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container > main{
+    grid-area: screen;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container > .post{
+    grid-area: b;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container main canvas{
+    border: double 0.5rem #777;
+}
