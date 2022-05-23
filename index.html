@@ -1,48 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- PAGE TITLE -->
-    <title>Naufal Izza</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naufal Izza</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  </style> 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            oil1: "#FBF5EF",
+            oil2: "#F3D3AC",
+            oil3: "#C6A19B",
+            oil4: "#8A6D9B",
+            oil5: "#494D7E",
+            oil6: "#272744",
+          },
+          backgroundImage: {
+            'brick': "url('./assets/img/index/brick.png')",
+            'brickButton': "url('./assets/img/index/brick-button.png')",
+            'button': "url('./assets/img/index/button.png')",
+            'buttonPressed': "url('./assets/img/index/button-pressed.png')",
+          },
+          fontFamily: {
+            pressStart2p: ['"Press Start 2P"', 'cursive'] 
+          },
+          listStyleType: {
+            none: 'none',
+            disc: 'disc',
+            decimal: 'decimal',
+            square: 'square',
+            roman: 'upper-roman',
+          },
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <!-- NAVBAR -->
-    <div id="navbar">
-        <p class="navbar-text">naufalizza /</p>
-        <ul>
-            <li class="navbar-item"><p class="navbar-text"><a href="./app/p5example/index.html">game_console</a></p></li>
-        </ul>
-        
-    </div>
-
-    <!-- CONTENT -->
-    <div id="content">
-        
-        <div id="content-page">
-            <p>The headphones were on. They had been utilized on purpose. She could hear her mom yelling in the background, but couldn't make out exactly what the yelling was about. That was exactly why she had put them on. She knew her mom would enter her room at any minute, and she could pretend that she hadn't heard any of the previous yelling.</p>
-            <p>I'm meant to be writing at this moment. What I mean is, I'm meant to be writing something else at this moment. The document I'm meant to be writing is, of course, open in another program on my computer and is patiently awaiting my attention. Yet here I am plonking down senseless sentiments in this paragraph because it's easier to do than to work on anything particularly meaningful. I am grateful for the distraction.</p>
-            <p>Sometimes there isn't a good answer. No matter how you try to rationalize the outcome, it doesn't make sense. And instead of an answer, you are simply left with a question. Why?</p>
-            <p>The headphones were on. They had been utilized on purpose. She could hear her mom yelling in the background, but couldn't make out exactly what the yelling was about. That was exactly why she had put them on. She knew her mom would enter her room at any minute, and she could pretend that she hadn't heard any of the previous yelling.</p>
-            <p>I'm meant to be writing at this moment. What I mean is, I'm meant to be writing something else at this moment. The document I'm meant to be writing is, of course, open in another program on my computer and is patiently awaiting my attention. Yet here I am plonking down senseless sentiments in this paragraph because it's easier to do than to work on anything particularly meaningful. I am grateful for the distraction.</p>
-            <p>Sometimes there isn't a good answer. No matter how you try to rationalize the outcome, it doesn't make sense. And instead of an answer, you are simply left with a question. Why?</p>
-            <p>The headphones were on. They had been utilized on purpose. She could hear her mom yelling in the background, but couldn't make out exactly what the yelling was about. That was exactly why she had put them on. She knew her mom would enter her room at any minute, and she could pretend that she hadn't heard any of the previous yelling.</p>
-            <p>I'm meant to be writing at this moment. What I mean is, I'm meant to be writing something else at this moment. The document I'm meant to be writing is, of course, open in another program on my computer and is patiently awaiting my attention. Yet here I am plonking down senseless sentiments in this paragraph because it's easier to do than to work on anything particularly meaningful. I am grateful for the distraction.</p>
-            <p>Sometimes there isn't a good answer. No matter how you try to rationalize the outcome, it doesn't make sense. And instead of an answer, you are simply left with a question. Why?</p>
-        
+<body class="bg-oil1 font-pressStart2p uppercase text-oil6">
+  <header class="space-y-8">
+    <div class="bg-brick h-[16px] bg-[length:64px_16px]"></div>
+    <nav class="flex justify-center items-center flex-row flex-wrap">
+      <a href="#about" class="font-pressStart2p flex justify-center items-center mx-4 my-2 bg-button h-[3rem] w-[9rem] bg-[length:9rem_3rem] hover:bg-buttonPressed hover:text-oil2 hover:pt-[0.3rem] hover:ease-in-out">
+        ABOUT
+      </a>
+      <a href="#skill" class="font-pressStart2p flex justify-center items-center mx-4 my-2 bg-button h-[3rem] w-[9rem] bg-[length:9rem_3rem] hover:bg-buttonPressed hover:text-oil2 hover:pt-[0.3rem] hover:ease-in-out">
+        SKILL
+      </a>
+      <a href="#project" class="font-pressStart2p flex justify-center items-center mx-4 my-2 bg-button h-[3rem] w-[9rem] bg-[length:9rem_3rem] hover:bg-buttonPressed hover:text-oil2 hover:pt-[0.3rem] hover:ease-in-out">
+        PROJECT
+      </a>
+      <a href="#contact" class="font-pressStart2p flex justify-center items-center mx-4 my-2 bg-button h-[3rem] w-[9rem] bg-[length:9rem_3rem] hover:bg-buttonPressed hover:text-oil2 hover:pt-[0.3rem] hover:ease-in-out">
+        CONTACT
+      </a>
+    </nav>
+    <div class="bg-brick h-[16px] bg-[length:64px_16px]"></div>
+  </header>
+  <main class="space-y-8">
+    <div id="about" class="flex flex-col items-center justify-center">
+      <div class="w-11/12 sm:w-10/12 flex flex-col sm:flex-row items-center sm:items-start justify-center">
+        <div id="profile-pic" class="flex items-center justify-center w-[18rem] max-w-[60vw] sm:ml-[-1rem] md:ml-[-2rem] lg:ml-0 sm:mr-0.5 lg:mr-3">
+          <img src="./assets/img/index/framed-profile.png" alt="profile-pic" class="drop-shadow-[0_18px_4px_rgba(0,0,0,0.25)]">
         </div>
-
-
+        <div id="bio" class="my-10 max-w-[100%] sm:w-[18rem] md:w-[24rem] sm:ml-0.5 lg:ml-3 space-y-8">
+          <h2 class="font-pressStart2p text-center sm:text-left mt-[-2.5rem] sm:mt-[2.5rem] sm:text-xl underline text-oil5">HI! I'M <span class="text-oil6">NAUFAL</span>.</h2>
+          <h4 class="font-pressStart2p text-center text-oil5 sm:text-left text-sm">UNDERGRADUATE STUDENT AT INFORMATICS ITB</h4>
+          <ul class="list-square pl-4 space-y-1">
+            <li class="font-pressStart2p text-xs text-oil5">FRONTEND DEVELOPER</li>
+            <li class="font-pressStart2p text-xs text-oil5">BACKEND DEVELOPER</li>
+            <li class="font-pressStart2p text-xs text-oil5">GAME DESIGN ENTHUSIAST</li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+
+    <div class="bg-brick h-[16px] bg-[length:64px_16px]"></div>
+    
+    <div id="skill" class="flex flex-col items-center justify-center py-8">
+      
+      <div class="w-11/12 sm:w-10/12 flex flex-col items-center sm:items-start justify-center">
+        <div id="project-title" class="font-pressStart2p text-xl flex flex-col justify-start mb-6 text-oil6 uppercase">SKILL</div>
+        <div class="bg-white w-[100%] rounded-lg p-4 flex flex-col drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)] text-[0.6rem]">
+          <h2 class="pl-3">PROGRAMMING</h2>
+          <div class="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center ">
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              PYTHON
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              JAVA
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              JAVASCRIPT
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              TYPESCRIPT
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              C/C++
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              C#
+            </p>
+          </div>
+          <h2 class="pl-3">FRONTEND</h2>
+          <div class="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center ">
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              REACT
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              NEXT.JS
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              TAILWIND
+            </p>
+          </div>
+          <h2 class="pl-3">BACKEND</h2>
+          <div class="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center ">
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              FLASK
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              EXPRESS.JS
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              NODE.JS
+            </p>
+          </div>
+          <h2 class="pl-3">OTHER</h2>
+          <div class="mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center ">
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              FIGMA
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              ASEPRITE
+            </p>
+            <p class="flex justify-center items-center mx-4 my-2 bg-brickButton drop-shadow-[0_12px_0px_rgba(74,77,120,1.0)] border-2 border-oil5 h-[3.2rem] w-[8rem] bg-[length:8rem_3rem] pt-[0.3rem] hover:ease-in-out">
+              INKSCAPE
+            </p>
+            
+          </div>
+          
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brick h-[16px] bg-[length:64px_16px]"></div>
+    
+    <div id="project"  class="flex flex-col items-center justify-center py-8">
+      <div class="w-11/12 sm:w-10/12 flex flex-col items-center sm:items-start justify-center">
+        <div id="project-title" class="font-pressStart2p text-xl flex flex-col justify-start mb-6 text-oil6 uppercase">PROJECT</div>
+        <div class="grid grid-cols-1 place-content-evenly justify-items-center w-[100%] sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 h-[100%] w-[100%]">
+          <div class="bg-white h-96 w-[100%] max-w-[20rem] rounded-lg p-3 space-y-1 flex flex-col h-[100%] drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)]">
+            <img  src="" alt="" class="bg-oil1 w-[100%] h-[12rem] rounded-md">
+            <h2 class="font-pressStart2p text-sm text-oil5 underline pt-4">SILAYAK</h2>
+            <p class="font-pressStart2p text-[0.5rem] uppercase pr-1">Sistem layanan akademik STEI ITB.</p>
+            <a href="https://silayak.netlify.app" target="_blank" class="font-pressStart2p text-xs pt-[0.3rem] hover:pt-[0.5rem] text-oil6 hover:text-oil2 bg-button hover:bg-buttonPressed self-end text-center h-[2rem] w-[6rem] bg-[length:6rem_2rem]" style="margin-top: auto;">visit</a>
+          </div>
+          <div class="bg-white h-96 w-[100%] max-w-[20rem] rounded-lg p-3 space-y-1 flex flex-col h-[100%] drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)]">
+            <img  src="" alt="" class="bg-oil1 w-[100%] h-[12rem] rounded-md">
+            <h2 class="font-pressStart2p text-sm text-oil5 underline pt-4">Budgget</h2>
+            <p class="font-pressStart2p text-[0.5rem] uppercase pr-1">Aplikasi penghitung budget bulanan.</p>
+            <a href="https://budgget.netlify.app" target="_blank" class="font-pressStart2p text-xs pt-[0.3rem] hover:pt-[0.5rem] text-oil6 hover:text-oil2 bg-button hover:bg-buttonPressed self-end text-center h-[2rem] w-[6rem] bg-[length:6rem_2rem]" style="margin-top: auto;">visit</a>
+          </div>
+          <div class="bg-white h-96 w-[100%] max-w-[20rem] rounded-lg p-3 space-y-1 flex flex-col h-[100%] drop-shadow-[0_12px_12px_rgba(0,0,0,0.25)]">
+            <img  src="" alt="" class="bg-oil1 w-[100%] h-[12rem] rounded-md">
+            <h2 class="font-pressStart2p text-sm text-oil5 underline pt-4">SILAYAK</h2>
+            <p class="font-pressStart2p text-[0.5rem] uppercase pr-1">Sistem layanan akademik STEI ITB.</p>
+            <a href="https://silayak.netlify.app" target="_blank" class="font-pressStart2p text-xs pt-[0.3rem] hover:pt-[0.5rem] text-oil6 hover:text-oil2 bg-button hover:bg-buttonPressed self-end text-center h-[2rem] w-[6rem] bg-[length:6rem_2rem]" style="margin-top: auto;">visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-brick h-[16px] bg-[length:64px_16px]"></div>
+    
+    <div id="contact" class="flex flex-col items-center justify-center py-8">
+      
+      <div class="w-11/12 sm:w-10/12 flex flex-col items-center sm:items-start justify-center">
+        <div id="project-title" class="font-pressStart2p text-xl flex flex-col justify-start mb-6 text-oil6 uppercase">CONTACT</div>
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="bg-white w-[100%] rounded-lg p-4 space-y-2 flex flex-col">
+          <h4 class="font-pressStart2p text-sm text-oil5 underline pt-4 uppercase">Name</h4>
+          <input type="text" name="name" class="w-full bg-oil1 text-oil6 py-2 px-4 rounded-md border-2">
+          <h4 class="font-pressStart2p text-sm text-oil5 underline pt-4 uppercase">Email</h4>
+          <input type="email" name="email" class="w-full bg-oil1 text-oil6 py-2 px-4 rounded-md border-2">
+          <h4 class="font-pressStart2p text-sm text-oil5 underline pt-4 uppercase">Content</h4>
+          <input type="textarea" name="content" class="w-full bg-oil1 text-oil6 py-2 px-4 rounded-md border-2">
+          <br/><br/><br/>
+          <input type="submit" value="Send" class="mt-8 cursor-pointer font-pressStart2p text-xs pt-[-0.3rem] hover:pt-[-0.1rem] text-oil6 hover:text-oil2 bg-button hover:bg-buttonPressed self-end text-center h-[2rem] w-[6rem] bg-[length:6rem_2rem]">
+        </form>
+      </div>
+    </div>
+    
+    <div class="bg-brick h-[16px] bg-[length:64px_16px]"></div>
+  </main>
+  <footer class="bg-oil6 w-full flex flex-col items-center justify-center">
+    <div class="w-11/12 sm:w-10/12 flex flex-col items-center justify-center py-4">
+      <span class="font-pressStart2p text-xs text-center flex flex-col justify-start text-oil2 uppercase mt-1">Naufal Izza</span>
+    </div>
+  </footer>
 </body>
 </html>
